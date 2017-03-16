@@ -87,24 +87,21 @@
 
 
 
-<meta name="description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。
-Constrain">
+<meta name="description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ConstraintLayout 学习整理笔记">
 <meta property="og:url" content="http://yoursite.com/2017/03/16/ConstraintLayout-学习整理笔记/index.html">
 <meta property="og:site_name" content="勤于奋的个人博客">
-<meta property="og:description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。
-Constrain">
+<meta property="og:description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-5458e490e0637876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://developer.android.google.cn/studio/images/write/layout-editor-callouts_2-2_2x.png">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-be662289806a7cc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-5b58e6a97146384f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://developer.android.com/studio/images/buttons/layout-editor-action-clear.png">
-<meta property="og:updated_time" content="2017-03-16T08:52:56.000Z">
+<meta property="og:updated_time" content="2017-03-16T08:57:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ConstraintLayout 学习整理笔记">
-<meta name="twitter:description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。
-Constrain">
+<meta name="twitter:description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/590858-5458e490e0637876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -380,7 +377,7 @@ Constrain">
       
 
       
-        <h2 id="为啥写此文"><a href="#为啥写此文" class="headerlink" title="为啥写此文"></a>为啥写此文</h2><p>最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。</p>
+        <h2 id="为啥写此文"><a href="#为啥写此文" class="headerlink" title="为啥写此文"></a>为啥写此文</h2><p>最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。<br><a id="more"></a></p>
 <h2 id="ConstraintLayout介绍"><a href="#ConstraintLayout介绍" class="headerlink" title="ConstraintLayout介绍"></a>ConstraintLayout介绍</h2><blockquote>
 <p>ConstraintLayout 是约束布局库中提供的一个视图组，其包含在 Android Studio 2.2 及更高版本中。它是随布局编辑器一起从头开始构建的，因此，所有功能均可通过 Design 编辑器访问，您无需手动编辑 XML。ConstraintLayout 最出色之处是基于约束的布局系统，让您无需嵌套任何视图组即可构建大多数布局。</p>
 </blockquote>
