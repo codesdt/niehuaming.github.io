@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="git," />
+  <meta name="keywords" content="widget," />
 
 
 
@@ -87,19 +87,25 @@
 
 
 
-<meta name="description" content="设置Git提交的用户名和邮箱
-12git config --global user.name &amp;quot;niehuaming&amp;quot;git config --global user.email &amp;quot;niehuaming78@gmail.com&amp;quot;">
+<meta name="description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。
+Constrain">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Github的SSH配置教程">
-<meta property="og:url" content="http://yoursite.com/2017/03/13/Github的SSH配置教程/index.html">
+<meta property="og:title" content="ConstraintLayout 学习整理笔记">
+<meta property="og:url" content="http://yoursite.com/2017/03/16/ConstraintLayout-学习整理笔记/index.html">
 <meta property="og:site_name" content="勤于奋的个人博客">
-<meta property="og:description" content="设置Git提交的用户名和邮箱
-12git config --global user.name &amp;quot;niehuaming&amp;quot;git config --global user.email &amp;quot;niehuaming78@gmail.com&amp;quot;">
-<meta property="og:updated_time" content="2017-03-13T09:54:30.000Z">
+<meta property="og:description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。
+Constrain">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-5458e490e0637876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://developer.android.google.cn/studio/images/write/layout-editor-callouts_2-2_2x.png">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-be662289806a7cc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-5b58e6a97146384f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://developer.android.com/studio/images/buttons/layout-editor-action-clear.png">
+<meta property="og:updated_time" content="2017-03-16T08:52:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Github的SSH配置教程">
-<meta name="twitter:description" content="设置Git提交的用户名和邮箱
-12git config --global user.name &amp;quot;niehuaming&amp;quot;git config --global user.email &amp;quot;niehuaming78@gmail.com&amp;quot;">
+<meta name="twitter:title" content="ConstraintLayout 学习整理笔记">
+<meta name="twitter:description" content="为啥写此文最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。
+Constrain">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/590858-5458e490e0637876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -127,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/13/Github的SSH配置教程/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/03/16/ConstraintLayout-学习整理笔记/"/>
 
 
 
 
 
-  <title> Github的SSH配置教程 | 勤于奋的个人博客 </title>
+  <title> ConstraintLayout 学习整理笔记 | 勤于奋的个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -292,7 +298,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/13/Github的SSH配置教程/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/16/ConstraintLayout-学习整理笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="聂华明">
@@ -313,7 +319,7 @@
             
             
               
-                Github的SSH配置教程
+                ConstraintLayout 学习整理笔记
               
             
           </h1>
@@ -328,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-13T17:50:38+08:00">
-                2017-03-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-16T15:36:52+08:00">
+                2017-03-16
               </time>
             
 
@@ -347,8 +353,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/03/13/Github的SSH配置教程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/13/Github的SSH配置教程/" itemprop="commentCount"></span>
+                <a href="/2017/03/16/ConstraintLayout-学习整理笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/16/ConstraintLayout-学习整理笔记/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -374,25 +380,35 @@
       
 
       
-        <p><strong>设置Git提交的用户名和邮箱</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;niehuaming&quot;</div><div class="line">git config --global user.email &quot;niehuaming78@gmail.com&quot;</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p><strong>查看git配置</strong></p>
-<p><code>git config --list</code></p>
-<p><strong>生成秘钥</strong></p>
-<p><code>ssh-keygen -t rsa -b 4096 -C&quot;your_email@example.com&quot;</code></p>
-<p>不停的回车即可</p>
-<p><strong>添加秘钥到ssh</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd ~/.ssh</div><div class="line">ssh-add id_rsa</div></pre></td></tr></table></figure>
-<p><strong>把id_rsa.pub全部内容添加到Git上面</strong></p>
+        <h2 id="为啥写此文"><a href="#为啥写此文" class="headerlink" title="为啥写此文"></a>为啥写此文</h2><p>最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。</p>
+<h2 id="ConstraintLayout介绍"><a href="#ConstraintLayout介绍" class="headerlink" title="ConstraintLayout介绍"></a>ConstraintLayout介绍</h2><blockquote>
+<p>ConstraintLayout 是约束布局库中提供的一个视图组，其包含在 Android Studio 2.2 及更高版本中。它是随布局编辑器一起从头开始构建的，因此，所有功能均可通过 Design 编辑器访问，您无需手动编辑 XML。ConstraintLayout 最出色之处是基于约束的布局系统，让您无需嵌套任何视图组即可构建大多数布局。</p>
+</blockquote>
+<p>为提升布局性能，您应将较早的布局转换为 ConstraintLayout。Android Studio 提供内置转换器以帮助您执行此操作：</p>
+<p>在 Android Studio 中打开现有布局并点击编辑器窗口底部的 Design 标签。<br>在 Component Tree 窗口中，右键点击布局，然后点击 Convert layout to ConstraintLayout。<br>如需了解有关如何使用 ConstraintLayout 构建布局的更多信息，请<a href="https://developer.android.google.cn/training/constraint-layout/index.html" target="_blank" rel="external">使用 ConstraintLayout 构建自适应 UI</a>。</p>
+<h2 id="Android-Studio-工具介绍"><a href="#Android-Studio-工具介绍" class="headerlink" title="Android Studio 工具介绍"></a>Android Studio 工具介绍</h2><p>当你新建好项目后，打开就是如下界面：<br><img src="http://upload-images.jianshu.io/upload_images/590858-5458e490e0637876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>当我第一次打开的时候，很不习惯，不是我们之前的LinearLayout作为根布局，然后点击底部Design按钮，就是如下界面<br><img src="https://developer.android.google.cn/studio/images/write/layout-editor-callouts_2-2_2x.png" alt="gw"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/590858-be662289806a7cc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>需要具体了解工具介绍请<a href="https://developer.android.google.cn/studio/write/layout-editor.html" target="_blank" rel="external">点击官网</a>赶快点击跟着官网提示去感受一下工具的魅力吧。</p>
+<h2 id="将ConstraintLayout添加到您的项目里面"><a href="#将ConstraintLayout添加到您的项目里面" class="headerlink" title="将ConstraintLayout添加到您的项目里面"></a>将ConstraintLayout添加到您的项目里面</h2><p>要在项目里面使用ConstraintLayout，请按照一下步骤操作：</p>
 <ul>
-<li>查看公钥里面的全部内容包括开头的ssh-rsa和结尾的邮箱</li>
-<li>进入github的setting，找到ssh Keys页面添加一个key,title随意</li>
+<li><p>确保项目是使用的最新库:<br><img src="http://upload-images.jianshu.io/upload_images/590858-5b58e6a97146384f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"> </p>
+</li>
+<li><p>然后添加依赖：compile’c​​om.android.support.constraint：constraint-layout：1.0.1’</p>
+</li>
 </ul>
-<p><strong>测试是否成功</strong></p>
-<p><code>ssh git@github.com</code></p>
-<p>成功返回类似信息:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi niehuaming! You&apos;ve successfully authenticated, but GitHub does not provide shell access</div></pre></td></tr></table></figure>
+<h2 id="创建新布局"><a href="#创建新布局" class="headerlink" title="创建新布局"></a>创建新布局</h2><p>要启动新的约束布局文件，请按照下列步骤操作：</p>
+<p>在项目窗口中，单击模块文件夹，然后选择文件&gt;新建&gt; XML&gt;布局XML 。</p>
+<p>输入布局文件的名称，并为根标记输入“android.support.constraint.ConstraintLayout”。</p>
+<p>单击“完成” 。</p>
+<h2 id="添加约束"><a href="#添加约束" class="headerlink" title="添加约束"></a>添加约束</h2><p>直接从 <code>调色板</code> 窗口拖动到编辑器中，其实核心的就是约束了，创建约束官网给了几条规则：</p>
+<blockquote>
+<p>第一条：每个视图至少有两个约束，一个水平和一个垂直</p>
+<p>第二条：只能在同一个平面创建约束和瞄点约束</p>
+<p>第二条：每个约束句柄只能用于一个约束，但您可以创建多个约束（从不同的视图）到同一个定位点。</p>
+</blockquote>
+<p>如果要删除约束可以点击：<img src="https://developer.android.com/studio/images/buttons/layout-editor-action-clear.png" alt="d"></p>
+<p>Google官网的一个DEMO <a href="https://github.com/googlesamples/android-ConstraintLayoutExamples" target="_blank" rel="external">https://github.com/googlesamples/android-ConstraintLayoutExamples</a></p>
 
       
     </div>
@@ -416,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/widget/" rel="tag"># widget</a>
           
         </div>
       
@@ -429,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/13/MAC平台Hexo静态博客搭建笔记/" rel="next" title="MAC平台Hexo静态博客搭建笔记">
-                <i class="fa fa-chevron-left"></i> MAC平台Hexo静态博客搭建笔记
+              <a href="/2017/03/13/Github的SSH配置教程/" rel="next" title="Github的SSH配置教程">
+                <i class="fa fa-chevron-left"></i> Github的SSH配置教程
               </a>
             
           </div>
@@ -438,10 +454,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/16/ConstraintLayout-学习整理笔记/" rel="prev" title="ConstraintLayout 学习整理笔记">
-                ConstraintLayout 学习整理笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -490,8 +502,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/13/Github的SSH配置教程/"
-           data-title="Github的SSH配置教程" data-url="http://yoursite.com/2017/03/13/Github的SSH配置教程/">
+      <div class="ds-thread" data-thread-key="2017/03/16/ConstraintLayout-学习整理笔记/"
+           data-title="ConstraintLayout 学习整理笔记" data-url="http://yoursite.com/2017/03/16/ConstraintLayout-学习整理笔记/">
       </div>
     
   </div>
@@ -515,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://a3.qpic.cn/psb?/V10Ugtm90y2xNq/tk93plKnw87axnsDWtNT2x*n*bpggFlPUoZQOhBc34U!/b/dI2RJ6K1BgAA&bo=9gGeAgAAAAABB0s!&rf=viewer_4"
@@ -616,6 +637,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为啥写此文"><span class="nav-number">1.</span> <span class="nav-text">为啥写此文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ConstraintLayout介绍"><span class="nav-number">2.</span> <span class="nav-text">ConstraintLayout介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android-Studio-工具介绍"><span class="nav-number">3.</span> <span class="nav-text">Android Studio 工具介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将ConstraintLayout添加到您的项目里面"><span class="nav-number">4.</span> <span class="nav-text">将ConstraintLayout添加到您的项目里面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建新布局"><span class="nav-number">5.</span> <span class="nav-text">创建新布局</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加约束"><span class="nav-number">6.</span> <span class="nav-text">添加约束</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

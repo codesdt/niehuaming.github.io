@@ -290,6 +290,162 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/16/ConstraintLayout-学习整理笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="聂华明">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://a3.qpic.cn/psb?/V10Ugtm90y2xNq/tk93plKnw87axnsDWtNT2x*n*bpggFlPUoZQOhBc34U!/b/dI2RJ6K1BgAA&bo=9gGeAgAAAAABB0s!&rf=viewer_4">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="勤于奋的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/16/ConstraintLayout-学习整理笔记/" itemprop="url">
+                  ConstraintLayout 学习整理笔记
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-16T15:36:52+08:00">
+                2017-03-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/16/ConstraintLayout-学习整理笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/16/ConstraintLayout-学习整理笔记/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="为啥写此文"><a href="#为啥写此文" class="headerlink" title="为啥写此文"></a>为啥写此文</h2><p>最新版本的studio 2.3 已经默认支持ConstraintLayout了，就是你新建一个工程，默认就是ConstraintLayout作为root布局，以前是LinearLayout作为root布局，而且支持Android 2.3 及更高的版本，时间过的可真快，既然官网默认作为root布局，作为安卓开发工程师，必须的学习它了，而此篇文章也是我自己的一个学习笔记。</p>
+<h2 id="ConstraintLayout介绍"><a href="#ConstraintLayout介绍" class="headerlink" title="ConstraintLayout介绍"></a>ConstraintLayout介绍</h2><blockquote>
+<p>ConstraintLayout 是约束布局库中提供的一个视图组，其包含在 Android Studio 2.2 及更高版本中。它是随布局编辑器一起从头开始构建的，因此，所有功能均可通过 Design 编辑器访问，您无需手动编辑 XML。ConstraintLayout 最出色之处是基于约束的布局系统，让您无需嵌套任何视图组即可构建大多数布局。</p>
+</blockquote>
+<p>为提升布局性能，您应将较早的布局转换为 ConstraintLayout。Android Studio 提供内置转换器以帮助您执行此操作：</p>
+<p>在 Android Studio 中打开现有布局并点击编辑器窗口底部的 Design 标签。<br>在 Component Tree 窗口中，右键点击布局，然后点击 Convert layout to ConstraintLayout。<br>如需了解有关如何使用 ConstraintLayout 构建布局的更多信息，请<a href="https://developer.android.google.cn/training/constraint-layout/index.html" target="_blank" rel="external">使用 ConstraintLayout 构建自适应 UI</a>。</p>
+<h2 id="Android-Studio-工具介绍"><a href="#Android-Studio-工具介绍" class="headerlink" title="Android Studio 工具介绍"></a>Android Studio 工具介绍</h2><p>当你新建好项目后，打开就是如下界面：<br><img src="http://upload-images.jianshu.io/upload_images/590858-5458e490e0637876.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>当我第一次打开的时候，很不习惯，不是我们之前的LinearLayout作为根布局，然后点击底部Design按钮，就是如下界面<br><img src="https://developer.android.google.cn/studio/images/write/layout-editor-callouts_2-2_2x.png" alt="gw"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/590858-be662289806a7cc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>需要具体了解工具介绍请<a href="https://developer.android.google.cn/studio/write/layout-editor.html" target="_blank" rel="external">点击官网</a>赶快点击跟着官网提示去感受一下工具的魅力吧。</p>
+<h2 id="将ConstraintLayout添加到您的项目里面"><a href="#将ConstraintLayout添加到您的项目里面" class="headerlink" title="将ConstraintLayout添加到您的项目里面"></a>将ConstraintLayout添加到您的项目里面</h2><p>要在项目里面使用ConstraintLayout，请按照一下步骤操作：</p>
+<ul>
+<li><p>确保项目是使用的最新库:<br><img src="http://upload-images.jianshu.io/upload_images/590858-5b58e6a97146384f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"> </p>
+</li>
+<li><p>然后添加依赖：compile’c​​om.android.support.constraint：constraint-layout：1.0.1’</p>
+</li>
+</ul>
+<h2 id="创建新布局"><a href="#创建新布局" class="headerlink" title="创建新布局"></a>创建新布局</h2><p>要启动新的约束布局文件，请按照下列步骤操作：</p>
+<p>在项目窗口中，单击模块文件夹，然后选择文件&gt;新建&gt; XML&gt;布局XML 。</p>
+<p>输入布局文件的名称，并为根标记输入“android.support.constraint.ConstraintLayout”。</p>
+<p>单击“完成” 。</p>
+<h2 id="添加约束"><a href="#添加约束" class="headerlink" title="添加约束"></a>添加约束</h2><p>直接从 <code>调色板</code> 窗口拖动到编辑器中，其实核心的就是约束了，创建约束官网给了几条规则：</p>
+<blockquote>
+<p>第一条：每个视图至少有两个约束，一个水平和一个垂直</p>
+<p>第二条：只能在同一个平面创建约束和瞄点约束</p>
+<p>第二条：每个约束句柄只能用于一个约束，但您可以创建多个约束（从不同的视图）到同一个定位点。</p>
+</blockquote>
+<p>如果要删除约束可以点击：<img src="https://developer.android.com/studio/images/buttons/layout-editor-action-clear.png" alt="d"></p>
+<p>Google官网的一个DEMO <a href="https://github.com/googlesamples/android-ConstraintLayoutExamples" target="_blank" rel="external">https://github.com/googlesamples/android-ConstraintLayoutExamples</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/13/Github的SSH配置教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -376,27 +532,15 @@
 
       
         
-          
-            <p><strong>设置Git提交的用户名和邮箱</strong></p>
+          <p><strong>设置Git提交的用户名和邮箱</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;niehuaming&quot;</div><div class="line">git config --global user.email &quot;niehuaming78@gmail.com&quot;</div></pre></td></tr></table></figure>
-<p><strong>查看git配置</strong></p>
-<p><code>git config --list</code></p>
-<p><strong>生成秘钥</strong></p>
-<p><code>ssh-keygen -t rsa -b 4096 -C&quot;your_email@example.com&quot;</code></p>
-<p>不停的回车即可</p>
-<p><strong>添加秘钥到ssh</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd ~/.ssh</div><div class="line">ssh-add id_rsa</div></pre></td></tr></table></figure>
-<p><strong>把id_rsa.pub全部内容添加到Git上面</strong></p>
-<ul>
-<li>查看公钥里面的全部内容包括开头的ssh-rsa和结尾的邮箱</li>
-<li>进入github的setting，找到ssh Keys页面添加一个key,title随意</li>
-</ul>
-<p><strong>测试是否成功</strong></p>
-<p><code>ssh git@github.com</code></p>
-<p>成功返回类似信息:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Hi niehuaming! You&apos;ve successfully authenticated, but GitHub does not provide shell access</div></pre></td></tr></table></figure>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/13/Github的SSH配置教程/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -521,194 +665,17 @@
 
       
         
-          
-            <p><strong>GitHub上创建GitHubPages</strong></p>
+          <p><strong>GitHub上创建GitHubPages</strong></p>
 <p>点击加号New repository仓库,名字严格按照<code>git用户名.github.io</code>.</p>
 <p><strong>下载node.js</strong></p>
-<p><code>brew install node</code></p>
-<p><strong>安装Hexo</strong></p>
-<p><code>npm install -g hexo-cli</code></p>
-<p>##开始建站</p>
-<p><strong>安装目录选择</strong></p>
-<p>安装完毕hexo后，在本地找个你需要建站的目录，CD进入，Hexo 将会在指定文件夹中新建所需要的文件。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo init &lt;你的站点名字&gt;</div><div class="line">cd &lt;你的站点名字&gt;</div><div class="line">npm install</div></pre></td></tr></table></figure>
-<p>新建完成后，你的站点文件夹目录如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└── themes</div></pre></td></tr></table></figure>
-<p><strong>_config.yml</strong></p>
-<p>网站的配置信息，如果要换电脑记得备份这个文件。</p>
-<p><strong>source</strong></p>
-<p>资源文件夹是存放用户资源的地方，换电脑一般会备份此文件。</p>
-<p><strong>themes</strong></p>
-<p>主题 文件夹。Hexo 会根据主题来生成静态页面。</p>
-<p>##网站配置 </p>
-<blockquote>
-<ul>
-<li>title    网站标题</li>
-<li>subtitle    网站副标题</li>
-<li>description    网站描述</li>
-<li>author    您的名字</li>
-<li>language    网站使用的语言</li>
-</ul>
-</blockquote>
-<p><strong>部署</strong></p>
-<p>在自己创建的blog下找到_config.yml这个文件并编辑，在最下面添加如下的语句。网址的maodahua替换成自己账号即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/niehuaming/niehuaming.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<p><strong>PS</strong>:三个冒号之后需要留一个空格，不然会引起错误。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd blog</div><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure>
-<p>然后在浏览器中输入localhost:4000就可以看到了。如果没有错误的话，可以执行</p>
-<p><code>hexo d</code></p>
-<p>可能会报错，</p>
-<blockquote>
-<p>ERROR Deployer not found: git</p>
-</blockquote>
-<p>需要安装 hexo-deployer-git。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<p>然后在执行hexo d完成静态页面生成和部署，成功后输入自己的:<br>niehuaming.github.io 就可以访问了。</p>
-<p>##替换默认主题</p>
-<p><strong>安装<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">Next</a>主题</strong></p>
-<blockquote>
-<p>Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。具体到 NexT 来说，安装步骤如下。</p>
-</blockquote>
-<p><strong>下载主题</strong></p>
-<blockquote>
-<p>如果你熟悉 Git， 建议你使用 克隆最新版本 的方式，之后的更新可以通过 git pull 来快速更新， 而不用再次下载压缩包替换。</p>
-</blockquote>
-<p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd your-hexo-site</div><div class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
-<p><strong>启动主题</strong></p>
-<p>打开<code>站点配置文件</code>找到 theme 字段，并将其值更改为 next。</p>
-<blockquote>
-<p>theme: next</p>
-</blockquote>
-<p>到此，NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前， 我们最好使用 hexo clean 来清除 Hexo 的缓存。</p>
-<p><strong>验证主题</strong></p>
-<p>首先启动 Hexo 本地站点，并开启调试模式（即加上 –debug），整个命令是 hexo s –debug。 在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误。 当命令行输出中提示出：</p>
-<blockquote>
-<p>INFO  Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
-</blockquote>
-<p>此时即可使用浏览器访问 <a href="http://localhost:4000，检查站点是否正确运行。" target="_blank" rel="external">http://localhost:4000，检查站点是否正确运行。</a></p>
-<p>当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse</p>
-<p><img src="http://theme-next.iissnan.com/uploads/five-minutes-setup/validation-default-scheme-mac.png" alt=""></p>
-<p>现在，你已经成功安装并启用了 NexT 主题。下一步我们将要更改一些主题的设定，包括个性化以及集成第三方服务。</p>
-<p>##绑定域名</p>
-<p>githubPages 绑定域名 <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/" target="_blank" rel="external">官方文档</a>。</p>
-<p><strong>创建并提交一个 CNAME 文件</strong></p>
-<ul>
-<li>在本地主题目录下的/landscape/source创库创建一个名为 CNAME的文件，<strong>注意</strong>没有任何后缀。</li>
-<li>文件内容为：<code>qinyufen.com</code>，就是你自己的域名。</li>
-<li>然后进入你申请的域名网站进行绑定，本人是阿里的域名，可以<a href="http://www.jianshu.com/p/fd878edb95e7" target="_blank" rel="external">参照</a></li>
-</ul>
-<p>##选择 Scheme</p>
-<p>Scheme 是 NexT 提供的一种特性，借助于 Scheme，NexT 为你提供多种不同的外观。同时，几乎所有的配置都可以 在 Scheme 之间共用。目前 NexT 支持三种 Scheme，他们是：</p>
-<ul>
-<li>Muse - 默认 Scheme，这是 NexT 最初的版本，黑白主调，大量留白</li>
-<li>Mist - Muse 的紧凑版本，整洁有序的单栏外观</li>
-<li>Pisces - 双栏 Scheme，小家碧玉似的清新 </li>
-</ul>
-<p>Scheme 的切换通过更改<code>主题配置文件</code>搜索 scheme 关键字。 你会看到有三行 scheme 的配置，将你需用启用的 scheme 前面注释 # 即可。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#scheme: Muse</div><div class="line">#scheme: Mist</div><div class="line">scheme: Pisces</div></pre></td></tr></table></figure>
-<p>##设置 语言</p>
-<p>编辑 <code>站点配置文件</code> 将 language 设置成你所需要的语言。建议明确设置你所需要的语言，例如选用简体中文，配置如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure>
-<p>##设置 菜单</p>
-<p>菜单配置包括三个部分，第一是菜单项（名称和链接），第二是菜单项的显示文本，第三是菜单项对应的图标。 NexT 使用的是 Font Awesome 提供的图标， Font Awesome 提供了 600+ 的图标，可以满足绝大的多数的场景，同时无须担心在 Retina 屏幕下 图标模糊的问题。</p>
-<p><strong>编辑<code>主题配置文件</code>修改以下内容</strong></p>
-<blockquote>
-<p>设定菜单内容，对应的字段是 menu。 菜单内容的设置格式是：item name: link。其中 item name 是一个名称，这个名称并不直接显示在页面上，她将用于匹配图标以及翻译。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  archives: /archives</div><div class="line">  #about: /about</div><div class="line">  #categories: /categories</div><div class="line">  tags: /tags</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
-<p>NexT 默认的菜单项有（标注  的项表示需要手动创建这个页面）：</p>
-<table>
-<thead>
-<tr>
-<th><strong>键值</strong></th>
-<th><strong>设定值</strong></th>
-<th><strong>显示文本（简体中文）</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>home</td>
-<td>home: /</td>
-<td>主页</td>
-</tr>
-<tr>
-<td>archives</td>
-<td>archives: /archives</td>
-<td>归档页</td>
-</tr>
-<tr>
-<td>categories</td>
-<td>categories: /categories</td>
-<td>分类页 </td>
-</tr>
-<tr>
-<td>tags</td>
-<td>tags: /tags</td>
-<td>标签页</td>
-</tr>
-<tr>
-<td>about</td>
-<td>about: /about</td>
-<td>关于页面 </td>
-</tr>
-<tr>
-<td>commonweal</td>
-<td>commonweal: /404.html</td>
-<td>公益 404 </td>
-</tr>
-</tbody>
-</table>
-<p>这样就完成了菜单的设置，如果要修改菜单的名字，只需进入next的</p>
-<blockquote>
-<p>languages/{language}.yml （{language} 为你所使用的语言）</p>
-</blockquote>
-<p>修改对应的文字就行。</p>
-<p><strong>如果要修改图标</strong></p>
-<p>设定菜单项的图标，对应的字段是 menu_icons。 此设定格式是 item name: icon name，其中 item name 与上一步所配置的菜单名字对应，icon name 是 Font Awesome 图标的 名字。而 enable 可用于控制是否显示图标，你可以设置成 false 来去掉图标。</p>
-<p><strong>设设置 侧栏显示位置</strong></p>
-<p>默认情况下，侧栏仅在文章页面（拥有目录列表）时才显示，并放置于右侧位置。 可以通过修改 主题配置文件 中的 sidebar 字段来控制侧栏的行为。侧栏的设置包括两个部分，其一是侧栏的位置， 其二是侧栏显示的时机。</p>
-<ul>
-<li><p>设置侧栏的位置，修改 sidebar.position 的值，支持的选项有：</p>
-<ul>
-<li>left - 靠左放置</li>
-<li>right - 靠右放置</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>sidebar:<br>  position: left</p>
-</blockquote>
-<ul>
-<li>设置侧栏显示的时机，修改 sidebar.display 的值，支持的选项有：  </li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">post - 默认行为，在文章页面（拥有目录列表）时显示</div><div class="line">always - 在所有页面中都显示</div><div class="line">hide - 在所有页面中都隐藏（可以手动展开）</div><div class="line">remove - 完全移除</div></pre></td></tr></table></figure>
-<p>##设置 头像</p>
-<p>  编辑 <code>站点配置文件</code>,新增字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">avatar: https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</div></pre></td></tr></table></figure>
-<p>##配置多说评论模板</p>
-<p>使用多说前需要先在 多说 创建一个站点。具体步骤如下：</p>
-<pre><code>* 登录后在首页选择 “我要安装”。
-* 创建站点，填写站点相关信息。 多说域名 这一栏填写的即是你的 duoshuo_shortname，如图：
-</code></pre><p><img src="http://theme-next.iissnan.com/uploads/five-minutes-setup/duoshuo-create-site.png" alt=""></p>
-<p>创建站点完成后在<code>主题配置文件</code>中新增 duoshuo_shortname 字段，值设置成上一步中的值。</p>
-<blockquote>
-<p>duoshuo_shortname: iissnan-notes</p>
-</blockquote>
-<p>##百度统计</p>
-<blockquote>
-<p>注意： baidu_analytics 不是你的百度 id 或者 百度统计 id</p>
-</blockquote>
-<ul>
-<li>登录 <a href="http://tongji.baidu.com/web/welcome/login" target="_blank" rel="external">百度统计</a>， 定位到站点的代码获取页面</li>
-<li><p>复制 hm.js? 后面那串统计脚本 id，如：</p>
-<p><img src="http://theme-next.iissnan.com/uploads/five-minutes-setup/analytics-baidu-id.png" alt=""></p>
-</li>
-<li><p>编辑 <code>站点配置文件</code>， 新增字段 baidu_analytics 字段，值设置成你的百度统计脚本 id</p>
-</li>
-</ul>
-
-          
+<p><code>brew install node</code><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/13/MAC平台Hexo静态博客搭建笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -783,7 +750,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -796,7 +763,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
