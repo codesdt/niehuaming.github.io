@@ -87,20 +87,17 @@
 
 
 
-<meta name="description" content="Java 技术 概览Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。
-数据">
+<meta name="description" content="Java 技术 概览Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java语言语法基础笔记">
 <meta property="og:url" content="http://yoursite.com/2017/05/18/java语言语法基础笔记/index.html">
 <meta property="og:site_name" content="勤于奋的个人博客">
-<meta property="og:description" content="Java 技术 概览Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。
-数据">
+<meta property="og:description" content="Java 技术 概览Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-434c77cbbad4c3fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-05-18T06:33:10.000Z">
+<meta property="og:updated_time" content="2017-05-18T06:51:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java语言语法基础笔记">
-<meta name="twitter:description" content="Java 技术 概览Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。
-数据">
+<meta name="twitter:description" content="Java 技术 概览Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/590858-434c77cbbad4c3fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
@@ -399,6 +396,7 @@
 
       
         <h1 id="Java-技术-概览"><a href="#Java-技术-概览" class="headerlink" title="Java 技术 概览"></a>Java 技术 概览</h1><p>Java 是一 种 出色 的 面向 对象 跨 平台 编程 语言。 在 当今 的 软件 领域 几乎 无处 不见 Java 语言 活跃 的 身影， 然而 Java 语言 究竟 是什么？ 本章 将从 两个 方面 解释 Java 的“ 身世”—— Java 既是 一种 编程 语言， 也是 一个 软件 平台。 本章 还将 从 多个 方面 分析 Java 到底 能为 我们 做 什么。</p>
+<a id="more"></a>
 <h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><p>Java 语言 是一 个 强调 数据 类型 的 语言， 在 声明 任何 变量 时， 必 须将 该 变量 定义 为 一种 数据 类型。 Java 中的 数据 类型 包括 基本 数据 类型 和 对象 类型（ 也称 为 引用 数据 类型）。 对象 类型 不属于 本章 所 讲述 的 内容， 本章 主要 介绍 数据 的 基本 类型。 Java 程序 中， 总共 有 8 大 基本 类型： 其中 包括 4 种 整型、 1 种 字符 型、 2 种 浮点 型、 1 种 布尔 型。 除了 这 几种 基本 类型 外， 其他 都 属于 对象 类型 的 数据。</p>
 <h1 id="四种整型"><a href="#四种整型" class="headerlink" title="四种整型"></a>四种整型</h1><p>什么 是 整型 呢？ 从 字面上 就可以 知道， 整型 就是 整数 类型， 也就是 没有 小数点 的 数字， 可以 是 正数 也可以 是 负数。 在 Java 中， 整型 主要 有 4 种： 字节 型（ byte）、 整数 型（ int）、 短 整型（ short）、 长整型（ long）。</p>
 <h1 id="短整型"><a href="#短整型" class="headerlink" title="短整型"></a>短整型</h1><p>short 用两 个 字节 表示 整 数值， 其 整数 值 介于- 32768~ 32767 之间。</p>
