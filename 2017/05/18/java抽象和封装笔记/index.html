@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java基础," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -87,20 +87,19 @@
 
 
 
-<meta name="description" content="程序设计中的流程控制任何 一门 语言 都 需要 基本 的 流程 控制 语句， 其 思想 也 符合 人类 判断 问题 或 做事 的 逻辑 过程。 什么 是 流程 控制 呢？ 流程 就是 做 一件 事情 的 顺序， 或者 说是 次序。 在 程序设计 中， 流程 就是 要 完成 一个 功能， 而 流程 控制 则是 指 如何 在 程序设计 中 控制 完成 某种 功能 的 次序。 ·条件 语句、 分支 语句">
+<meta name="description" content="抽象和封装在 Java 程序语言 中， 有两 个 很重 要的 概念： 抽象 方法 和 抽象 类。 抽象 方法 是一 种 方法， 是 Java 语言 编程 的 基本 特点。 抽象 方法 将 所有 具体 的 事务， 抽取 成为 一些 共同 的 方法。
+什么是抽象抽象 就是 将 拥有 共同 方法 和 属性 的 对象 提取 出来， 提取 后， 重新 设计 一个 更加 通用、 更加 大众化 的 类， 这个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="java语言流程控制笔记">
-<meta property="og:url" content="http://yoursite.com/2017/05/18/java语言流程控制笔记/index.html">
+<meta property="og:title" content="java抽象和封装笔记">
+<meta property="og:url" content="http://yoursite.com/2017/05/18/java抽象和封装笔记/index.html">
 <meta property="og:site_name" content="勤于奋的个人博客">
-<meta property="og:description" content="程序设计中的流程控制任何 一门 语言 都 需要 基本 的 流程 控制 语句， 其 思想 也 符合 人类 判断 问题 或 做事 的 逻辑 过程。 什么 是 流程 控制 呢？ 流程 就是 做 一件 事情 的 顺序， 或者 说是 次序。 在 程序设计 中， 流程 就是 要 完成 一个 功能， 而 流程 控制 则是 指 如何 在 程序设计 中 控制 完成 某种 功能 的 次序。 ·条件 语句、 分支 语句">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-c4ee64405a2037b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-f461feee4ae65675.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-896d118321610969.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-05-18T07:43:31.000Z">
+<meta property="og:description" content="抽象和封装在 Java 程序语言 中， 有两 个 很重 要的 概念： 抽象 方法 和 抽象 类。 抽象 方法 是一 种 方法， 是 Java 语言 编程 的 基本 特点。 抽象 方法 将 所有 具体 的 事务， 抽取 成为 一些 共同 的 方法。
+什么是抽象抽象 就是 将 拥有 共同 方法 和 属性 的 对象 提取 出来， 提取 后， 重新 设计 一个 更加 通用、 更加 大众化 的 类， 这个">
+<meta property="og:updated_time" content="2017-05-18T10:15:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java语言流程控制笔记">
-<meta name="twitter:description" content="程序设计中的流程控制任何 一门 语言 都 需要 基本 的 流程 控制 语句， 其 思想 也 符合 人类 判断 问题 或 做事 的 逻辑 过程。 什么 是 流程 控制 呢？ 流程 就是 做 一件 事情 的 顺序， 或者 说是 次序。 在 程序设计 中， 流程 就是 要 完成 一个 功能， 而 流程 控制 则是 指 如何 在 程序设计 中 控制 完成 某种 功能 的 次序。 ·条件 语句、 分支 语句">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/590858-c4ee64405a2037b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="java抽象和封装笔记">
+<meta name="twitter:description" content="抽象和封装在 Java 程序语言 中， 有两 个 很重 要的 概念： 抽象 方法 和 抽象 类。 抽象 方法 是一 种 方法， 是 Java 语言 编程 的 基本 特点。 抽象 方法 将 所有 具体 的 事务， 抽取 成为 一些 共同 的 方法。
+什么是抽象抽象 就是 将 拥有 共同 方法 和 属性 的 对象 提取 出来， 提取 后， 重新 设计 一个 更加 通用、 更加 大众化 的 类， 这个">
 
 
 
@@ -128,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/18/java语言流程控制笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/18/java抽象和封装笔记/"/>
 
 
 
 
 
-  <title> java语言流程控制笔记 | 勤于奋的个人博客 </title>
+  <title> java抽象和封装笔记 | 勤于奋的个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -293,7 +292,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/18/java语言流程控制笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/18/java抽象和封装笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="聂华明">
@@ -314,7 +313,7 @@
             
             
               
-                java语言流程控制笔记
+                java抽象和封装笔记
               
             
           </h1>
@@ -329,7 +328,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T15:22:06+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-18T16:40:20+08:00">
                 2017-05-18
               </time>
             
@@ -370,8 +369,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/05/18/java语言流程控制笔记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/18/java语言流程控制笔记/" itemprop="commentCount"></span>
+                <a href="/2017/05/18/java抽象和封装笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/18/java抽象和封装笔记/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -397,17 +396,25 @@
       
 
       
-        <h1 id="程序设计中的流程控制"><a href="#程序设计中的流程控制" class="headerlink" title="程序设计中的流程控制"></a>程序设计中的流程控制</h1><p>任何 一门 语言 都 需要 基本 的 流程 控制 语句， 其 思想 也 符合 人类 判断 问题 或 做事 的 逻辑 过程。 什么 是 流程 控制 呢？ 流程 就是 做 一件 事情 的 顺序， 或者 说是 次序。 在 程序设计 中， 流程 就是 要 完成 一个 功能， 而 流程 控制 则是 指 如何 在 程序设计 中 控制 完成 某种 功能 的 次序。 ·条件 语句、 分支 语句 和 循环 语句。 ·中断、 继续、 返回 语句。</p>
-<a id="more"></a>
-<h1 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句 "></a>条件语句 </h1><p>if( 条件) ｛ 目的 一; ｝ else { 目的 二; }</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/590858-c4ee64405a2037b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/590858-f461feee4ae65675.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<h1 id="嵌套语句"><a href="#嵌套语句" class="headerlink" title="嵌套语句"></a>嵌套语句</h1><p>if 嵌套 语句 也是 经常 使用 的 多分 支 判断 语句， 在 一次 判断 之后 又有 新 一层 的 判断， 接着 又有 一层 判断， 逐渐 深入， 达到 实现 复杂 判断 的 目的， 这种 多层次 判断 相当于 多条 件 判断， 在 满足 几个 条件后再 执行 适当 的 语句。</p>
-<h1 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h1><p>循环 语句 共有 3 种 常见 的 形式： for 语句、 while 语句 和 do… while 语句。</p>
-<h1 id="中断控制语句"><a href="#中断控制语句" class="headerlink" title="中断控制语句"></a>中断控制语句</h1><p>在 Java 程序 开发 中， 使用 关键字 break 来 表示 中断 控制。 中断 控制 语句 用来 强行 退出 程序 的 循环 体 部分 或 分支 语句（ 如 switch 语句）。 在 switch 分支 语句 中， 已经 使用 过 break 语句， 一旦 执行 该 跳 转 语句， 程序 就 退出 switch 语句。</p>
-<h1 id="继续语句"><a href="#继续语句" class="headerlink" title="继续语句"></a>继续语句</h1><p>在 Java 程序设计 中， 继续 语句 使用 关键字 continue 表示。 当 执行 continue 语句 时， 程序 从 循环 体 的 开始 处 执行， 而 不考虑 循环 体中 已经 执行 了 多少 轮 循环， 在 for 循环 语句 中， 执行 到 continue 语句 时， 不再 执行 循环 体中 其他 代码， 而是 直接 跳 转到 增量 表达式， 再开始 下 一轮 的 for 循环。 在 while 和 do… while 语句 中， 运行 到 continue 语句 时 则 跳 转到 相应 的 条件 表达式， 再开始 下 一轮 的 循环。</p>
-<h1 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h1><p>在 讲述 条件 判断 语句 时， 曾经 提到 当 判断 条件 过多 时， 可以 使用 分支 语句 来 编写。 之所以 使用 分支 语句 而 不是 if/ else 条件 语句， 是因为 当 需要 判断 的 条件 过多 时， 后者 实现 时会 显得 很 烦琐， 为了 解决 该 问题， 可以 利用 分支 语句。<br><img src="http://upload-images.jianshu.io/upload_images/590858-896d118321610969.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
-<h1 id="返回语句"><a href="#返回语句" class="headerlink" title="返回语句"></a>返回语句</h1><p>返回 语句 就是 在 执行 程序 的 过程中， 跳 转到 另一个 程序。 一般 返回 语句 用在 子程序 或 程序 的 函数 方法 中。 返回 语句 使用 关键字 return 来 表示。</p>
+        <h1 id="抽象和封装"><a href="#抽象和封装" class="headerlink" title="抽象和封装"></a>抽象和封装</h1><p>在 Java 程序语言 中， 有两 个 很重 要的 概念： 抽象 方法 和 抽象 类。 抽象 方法 是一 种 方法， 是 Java 语言 编程 的 基本 特点。 抽象 方法 将 所有 具体 的 事务， 抽取 成为 一些 共同 的 方法。</p>
+<h1 id="什么是抽象"><a href="#什么是抽象" class="headerlink" title="什么是抽象"></a>什么是抽象</h1><p>抽象 就是 将 拥有 共同 方法 和 属性 的 对象 提取 出来， 提取 后， 重新 设计 一个 更加 通用、 更加 大众化 的 类， 这个 类 称为 抽象 类。 抽象 类 是 从 一个 客户 要求 信息 中 提取 出 一个 类。</p>
+<h1 id="什么是抽象类"><a href="#什么是抽象类" class="headerlink" title="什么是抽象类"></a>什么是抽象类</h1><p>前面 介绍 过 抽象， 抽象 就是 从 具体 到 通用 的 提取。 而 抽象 类 就是 指 具有 共同 特 性的 类， 其 通过 关键字“ abstract” 表示。</p>
+<p>抽象 类 是 可以 继承 的， 如果 子类 没有 实现 抽象 类 的 全部 抽象 方法， 那么 子类 也是 抽象 类。 如果 实现 了 抽象 类 的 全部 抽象 方法， 那么 子类 就不 是 抽象 类。 含有 抽象 方法 的 类 一定 是 抽象 类， 但 抽象 类 不一定 含有 抽象 方法， 也可以 全部 都是 具体 的 方法。</p>
+<h1 id="抽象-与-接口-的-区别"><a href="#抽象-与-接口-的-区别" class="headerlink" title="抽象 与 接口 的 区别"></a>抽象 与 接口 的 区别</h1><p>接口 和 抽象 在 很多 方面 相似， 下面 列出 其 共同点。 </p>
+<p> ·都不能 创建 实例 对象， 因为 它们 都是 抽象 的。 </p>
+<p> ·虽然 不能 直接 通过 关键字“ new” 创建 对象 实例， 但可以 声明 变量， 通过 变量 指向 子类 或 实现 类 的 对象， 来 创建 对象 实例。 </p>
+<p> 两者 的 不同点， 如下： </p>
+<p> ·Java 不支持 多重 继承， 即 一个 子类 只能 有一个 父 类， 但 一个 子类 可以 实现 多个 接口。 </p>
+<p> ·接口 内 不能 有 实例 字段， 只能 有 静态 变量， 抽象 类 可以 拥有 实例 字段。 </p>
+<p> ·接口 内 方法 自动 设置 为“ public” 的， 抽象 类 中的 方法 必须 手动 声明 访问 控制 符。</p>
+<h1 id="枚举"><a href="#枚举" class="headerlink" title=" 枚举"></a> 枚举</h1><p>在 Java 语言 刚 发布 时， SUN 公司 宣称 去掉 了 C 语言 中 臃肿、 没用 的 语法， 例如 指针、 枚举 等。 随着 时间 的 发展， 关于 Java 的 应用 越来越 广， SUN 公司 不得 不使 Java 语言 支持 以前 认为 臃肿、 没用 的 语法， 其中 就 包含 枚举 语法。</p>
+<p>枚举 的 最大 作用 就是 让 某种 类型 的 变量 的 取值 只能 为 若干个 固定 值 中的 一个， 否则 编译器 将 报错。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line">public class WeekDay &#123;</div><div class="line">	private WeekDay() &#123;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	public final static WeekDay SUN = new WeekDay(); // 星期日 常量 06 public final</div><div class="line">	public final static WeekDay MON = new WeekDay(); // 星期日 常量 06 public final</div><div class="line">	public final static WeekDay TUE = new WeekDay(); // 星期日 常量 06 public final</div><div class="line">	public final static WeekDay WED = new WeekDay(); // 星期日 常量 06 public final</div><div class="line">	public final static WeekDay THU = new WeekDay(); // 星期日 常量 06 public final</div><div class="line">	public final static WeekDay FN = new WeekDay(); // 星期日 常量 06 public final</div><div class="line">	public final static WeekDay SAT = new WeekDay(); // 星期日 常量 06 public final</div><div class="line"></div><div class="line">	public WeekDay nextDay() &#123;</div><div class="line">		if (this == SUN) &#123;</div><div class="line">			return MON;</div><div class="line">		&#125; else if (this == MON) &#123;</div><div class="line">			return TUE;</div><div class="line">		&#125; else if (this == TUE) &#123;</div><div class="line">			return WED;</div><div class="line">		&#125; else if (this == WED) &#123;</div><div class="line">			return TUE;</div><div class="line">		&#125; else if (this == THU) &#123;</div><div class="line">			return FN;</div><div class="line">		&#125; else if (this == FN) &#123;</div><div class="line">			return SAT;</div><div class="line">		&#125; else &#123;</div><div class="line">			return SUN;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	@Override</div><div class="line">	public String toString() &#123;</div><div class="line">		if (this == SUN) &#123;</div><div class="line">			return &quot;星期日&quot;;</div><div class="line">		&#125; else if (this == MON) &#123;</div><div class="line">			return &quot;星期一&quot;;</div><div class="line">		&#125; else if (this == TUE) &#123;</div><div class="line">			return &quot;星期二&quot;;</div><div class="line">		&#125; else if (this == WED) &#123;</div><div class="line">			return &quot;星期三&quot;;</div><div class="line">		&#125; else if (this == THU) &#123;</div><div class="line">			return &quot;星期四&quot;;</div><div class="line">		&#125; else if (this == FN) &#123;</div><div class="line">			return &quot;星期五&quot;;</div><div class="line">		&#125; else &#123;</div><div class="line">			return &quot;星期六&quot;;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li>带有构造函数的枚举Enum</li>
+<li>带有抽象方法的Enum</li>
+</ol>
+<h1 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h1><p>所谓 反射（ Reflection）， 其实 就是 程序 自己 能够 检查 自身 信息， 就 像人 会 通过 镜子 反光 来 查看 自己 本身 一样。 反射 使得 Java 语言 具有 了“ 动态 性”， 即 程序 首先 会 检查 某个 类 中的 方法、 属性 等 信息， 然后 再 动态 地 调用 或 动态 创建 该类 或 该类 的 对象。</p>
 
       
     </div>
@@ -429,12 +436,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/java基础/" rel="tag"># java基础</a>
-          
-        </div>
-      
 
       
         
@@ -444,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/18/java语言语法基础笔记/" rel="next" title="java语言语法基础笔记">
-                <i class="fa fa-chevron-left"></i> java语言语法基础笔记
+              <a href="/2017/05/18/java语言流程控制笔记/" rel="next" title="java语言流程控制笔记">
+                <i class="fa fa-chevron-left"></i> java语言流程控制笔记
               </a>
             
           </div>
@@ -453,10 +454,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/18/java抽象和封装笔记/" rel="prev" title="java抽象和封装笔记">
-                java抽象和封装笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -505,8 +502,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/05/18/java语言流程控制笔记/"
-           data-title="java语言流程控制笔记" data-url="http://yoursite.com/2017/05/18/java语言流程控制笔记/">
+      <div class="ds-thread" data-thread-key="2017/05/18/java抽象和封装笔记/"
+           data-title="java抽象和封装笔记" data-url="http://yoursite.com/2017/05/18/java抽象和封装笔记/">
       </div>
     
   </div>
@@ -659,7 +656,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#程序设计中的流程控制"><span class="nav-number">1.</span> <span class="nav-text">程序设计中的流程控制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#条件语句"><span class="nav-number">2.</span> <span class="nav-text">条件语句 </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#嵌套语句"><span class="nav-number">3.</span> <span class="nav-text">嵌套语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#循环语句"><span class="nav-number">4.</span> <span class="nav-text">循环语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#中断控制语句"><span class="nav-number">5.</span> <span class="nav-text">中断控制语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#继续语句"><span class="nav-number">6.</span> <span class="nav-text">继续语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分支语句"><span class="nav-number">7.</span> <span class="nav-text">分支语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#返回语句"><span class="nav-number">8.</span> <span class="nav-text">返回语句</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#抽象和封装"><span class="nav-number">1.</span> <span class="nav-text">抽象和封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是抽象"><span class="nav-number">2.</span> <span class="nav-text">什么是抽象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是抽象类"><span class="nav-number">3.</span> <span class="nav-text">什么是抽象类</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#抽象-与-接口-的-区别"><span class="nav-number">4.</span> <span class="nav-text">抽象 与 接口 的 区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#枚举"><span class="nav-number">5.</span> <span class="nav-text"> 枚举</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#反射"><span class="nav-number">6.</span> <span class="nav-text">反射</span></a></li></ol></div>
             
 
           </div>
