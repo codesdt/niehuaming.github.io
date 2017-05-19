@@ -87,19 +87,16 @@
 
 
 
-<meta name="description" content="标注标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。
-“@ SuppressWarnings”其实“@ SuppressWarnings” 标注 就是 告诉 Java">
+<meta name="description" content="标注标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java语言标注笔记">
 <meta property="og:url" content="http://yoursite.com/2017/05/19/java语言标注笔记/index.html">
 <meta property="og:site_name" content="勤于奋的个人博客">
-<meta property="og:description" content="标注标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。
-“@ SuppressWarnings”其实“@ SuppressWarnings” 标注 就是 告诉 Java">
-<meta property="og:updated_time" content="2017-05-19T04:04:07.000Z">
+<meta property="og:description" content="标注标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。">
+<meta property="og:updated_time" content="2017-05-19T04:06:40.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java语言标注笔记">
-<meta name="twitter:description" content="标注标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。
-“@ SuppressWarnings”其实“@ SuppressWarnings” 标注 就是 告诉 Java">
+<meta name="twitter:description" content="标注标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。">
 
 
 
@@ -402,7 +399,10 @@
 
       
         <h1 id="标注"><a href="#标注" class="headerlink" title="标注"></a>标注</h1><p>标注（ Annotation） 是 Java 语言 新出现 的 一个 特性， 在 实际 的 应用 中 其 可以 部分 或 全部 地 取代 传统 的 XML 等 部署 描述 文件。 之所以 要 出现 标注 特性， 是因为 部署 描述 文件 很复杂， 在 具体 编写 时 很容易 出错。</p>
+<a id="more"></a>
 <h2 id="“-SuppressWarnings”"><a href="#“-SuppressWarnings”" class="headerlink" title="“@ SuppressWarnings”"></a>“@ SuppressWarnings”</h2><p>其实“@ SuppressWarnings” 标注 就是 告诉 Java 编译器 不需要 再 提示“ 注意”， 即 起到 压缩 警告 的 作用。</p>
+<p>总之， 标注 其实 就 相当于 一种 标志， 加上 标注 就 等于 打上 了 某种 标记， 没 加 就 等于 没有 某种 标记。 当 Java 语言 的 编译器、 开发 工具 等 其他 程序 在 具体 编译程序 时， 就会 通过“ 反射” 知道 类 或 其他 各种 元素 上 是否 有 标记， 然后 就会 根据 标记 去 实现 相应 的 功能。</p>
+<h2 id="Override"><a href="#Override" class="headerlink" title="@ Override"></a>@ Override</h2><p>方法， 主要 用于 子类 在 覆盖 父 类 中的 方 法名 时， 检测 方法 名称。 如果 方法 名称 正确， 则 不会有 任何 提示， 否则 就会 提示 错误。</p>
 
       
     </div>
@@ -650,7 +650,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#标注"><span class="nav-number">1.</span> <span class="nav-text">标注</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#“-SuppressWarnings”"><span class="nav-number">1.1.</span> <span class="nav-text">“@ SuppressWarnings”</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#标注"><span class="nav-number">1.</span> <span class="nav-text">标注</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#“-SuppressWarnings”"><span class="nav-number">1.1.</span> <span class="nav-text">“@ SuppressWarnings”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Override"><span class="nav-number">1.2.</span> <span class="nav-text">@ Override</span></a></li></ol></li></ol></div>
             
 
           </div>
