@@ -87,19 +87,18 @@
 
 
 
-<meta name="description" content="泛型盖帘Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。
-查看 关于 Java 语言 的 API 帮助 文档， 经常 会 遇到 类 的 后面 跟着“&amp;lt; E&amp;gt;” 标识， 例如 Vector&amp;lt; E&amp;gt;、">
+<meta name="description" content="泛型盖帘Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java语言泛型笔记">
 <meta property="og:url" content="http://yoursite.com/2017/05/19/java语言泛型笔记/index.html">
 <meta property="og:site_name" content="勤于奋的个人博客">
-<meta property="og:description" content="泛型盖帘Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。
-查看 关于 Java 语言 的 API 帮助 文档， 经常 会 遇到 类 的 后面 跟着“&amp;lt; E&amp;gt;” 标识， 例如 Vector&amp;lt; E&amp;gt;、">
-<meta property="og:updated_time" content="2017-05-19T05:31:06.000Z">
+<meta property="og:description" content="泛型盖帘Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/590858-a871768d2677a9d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-05-19T05:44:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java语言泛型笔记">
-<meta name="twitter:description" content="泛型盖帘Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。
-查看 关于 Java 语言 的 API 帮助 文档， 经常 会 遇到 类 的 后面 跟着“&amp;lt; E&amp;gt;” 标识， 例如 Vector&amp;lt; E&amp;gt;、">
+<meta name="twitter:description" content="泛型盖帘Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/590858-a871768d2677a9d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -402,6 +401,7 @@
 
       
         <h1 id="泛型盖帘"><a href="#泛型盖帘" class="headerlink" title="泛型盖帘"></a>泛型盖帘</h1><p>Java泛型（generics）是JDK 5中引入的一个新特性，允许在定义类和接口的时候使用类型参数（type parameter）。声明的类型参数在使用时用具体的类型来替换。泛型最主要的应用是在JDK 5中的新集合类框架中。</p>
+<a id="more"></a>
 <p>查看 关于 Java 语言 的 API 帮助 文档， 经常 会 遇到 类 的 后面 跟着“&lt; E&gt;” 标识， 例如 Vector&lt; E&gt;、 ArrayList&lt; E&gt; 等， 其实&lt; E&gt; 标识 就是 代表 泛 型。 所谓 泛 型， 其 本质 就是 实现 参数 化 类型， 也就是说 所 操作 的 数据 类型 被指 定为 一个 参数。</p>
 <h1 id="关于-泛-型-的-一些-特性"><a href="#关于-泛-型-的-一些-特性" class="headerlink" title="关于 泛 型 的 一些 特性"></a>关于 泛 型 的 一些 特性</h1><ol>
 <li><p>参数 化 类型 与 原始 类型 的 兼容</p>
@@ -419,6 +419,8 @@ String s = v. get( 0);
 <ol>
 <li>利用 反射 绕过 泛 型 的 类型 限制</li>
 </ol>
+<h1 id="关于-泛-型-的-通配符"><a href="#关于-泛-型-的-通配符" class="headerlink" title="关于 泛 型 的 通配符"></a>关于 泛 型 的 通配符</h1><p>查看 关于 Java 语言 的 API 帮助 文档， 经常 会 遇到 类 的 后面 跟着&lt;？&gt;、&lt;？ extends U&gt; 和&lt;？ super U&gt; 等 标识， 例如&lt; U&gt; Class&lt;？ Extends U&gt; 等。 如果 想 彻底 了解 这些 通配符， 则需 要从 为什么 要 出现 通配符 开始。</p>
+<h1 id="什么-是-类-加载-器"><a href="#什么-是-类-加载-器" class="headerlink" title="什么 是 类 加载 器"></a>什么 是 类 加载 器</h1><p>所谓 类 加载 器 就是 加载 类 的 工具， Java 虚拟 机（ JVM） 运行 类 的 第一 件事 情 就是 将 该类 的 字节 码 加载 进来， 即 类 加载 器 根据 类 的 名称 定位 和 生成 类 的 字节 码 数据， 然后 返回 给 JVM。<br><img src="http://upload-images.jianshu.io/upload_images/590858-a871768d2677a9d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>类 加载 器 装载 某个 类 字节 码 的 过程 实际上 就是 创建 Class 类 的 一个 实例 对象。</p>
 
       
     </div>
@@ -666,7 +668,7 @@ String s = v. get( 0);
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#泛型盖帘"><span class="nav-number">1.</span> <span class="nav-text">泛型盖帘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于-泛-型-的-一些-特性"><span class="nav-number">2.</span> <span class="nav-text">关于 泛 型 的 一些 特性</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#泛型盖帘"><span class="nav-number">1.</span> <span class="nav-text">泛型盖帘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于-泛-型-的-一些-特性"><span class="nav-number">2.</span> <span class="nav-text">关于 泛 型 的 一些 特性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于-泛-型-的-通配符"><span class="nav-number">3.</span> <span class="nav-text">关于 泛 型 的 通配符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#什么-是-类-加载-器"><span class="nav-number">4.</span> <span class="nav-text">什么 是 类 加载 器</span></a></li></ol></div>
             
 
           </div>
